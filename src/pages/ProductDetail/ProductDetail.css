@@ -1,0 +1,119 @@
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.product-detail-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.product-detail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.back-btn:hover {
+  color: var(--color-accent);
+}
+
+.detail-category {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.detail-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.detail-price {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+}
+
+.detail-description {
+  color: var(--color-text-secondary);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.quantity-selector button {
+  background: none;
+  border: none;
+  color: var(--color-text-primary);
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.quantity-selector button:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.quantity-selector span {
+  padding: 0.75rem 1rem;
+  min-width: 3rem;
+  text-align: center;
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+}
+
+.add-cart-lg {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.add-cart-lg.success {
+  background-color: var(--color-success);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .detail-title {
+    font-size: 2.5rem;
+  }
+}

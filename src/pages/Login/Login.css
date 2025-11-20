@@ -1,0 +1,36 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.login-container {
+  background-color: var(--color-bg-secondary);
+  padding: 3rem;
+  border-radius: var(--radius-md);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.login-form {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.register-link {
+  margin-top: 1.5rem;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: var(--color-accent);
+  font-weight: 500;
+}
