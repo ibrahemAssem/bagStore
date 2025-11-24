@@ -16,6 +16,7 @@ const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
   'https://bagstore.vercel.app',
+  'https://bag-store-five.vercel.app',
   process.env.FRONTEND_URL
 ].filter(Boolean);
 
